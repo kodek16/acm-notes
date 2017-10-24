@@ -1,0 +1,47 @@
+\documentclass[10pt]{extarticle}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage[landscape,letterpaper,twoside=false,top=15mm,bottom=15mm,left=10mm,right=10mm]{geometry}
+
+\pagestyle{myheadings}
+
+\usepackage{sourcecodepro}
+\usepackage[T1]{fontenc}
+
+\usepackage{color}
+\usepackage{xcolor}
+\definecolor{gray}{HTML}{8C8C8C}
+\definecolor{blue}{HTML}{446FBD}
+\definecolor{orange}{HTML}{E67E22}
+
+\usepackage{listings}
+\lstset{
+    tabsize=2,
+    basicstyle=\ttfamily\small,
+    columns=fixed,
+    extendedchars=true,
+    breaklines=true,
+    prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    keywordstyle=\color{blue},
+    commentstyle=\color{gray},
+    stringstyle=\color{orange}
+}
+
+\begin{document}
+\begin{multicols*}{2}
+
+% Table of contents should be as dense as possible.
+\setlength{\parskip}{0.0in}
+\tableofcontents
+\setlength{\parskip}{0.1in}
+
+\section{Example section}
+
+\subsection{Example subsection}
+\lstinputlisting[language=c++]{example.cc}
+
+\end{multicols*}
+\end{document}
