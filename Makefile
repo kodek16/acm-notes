@@ -1,4 +1,4 @@
-TESTS=example_test.cc
+TESTS=geometry_3d_test.cc
 
 CXX=g++
 CXXFLAGS=--std=c++14 -I.
